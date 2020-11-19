@@ -7,3 +7,252 @@ C:\Users\Administrator\Desktop\led\led.uvproj
 Project File Date:  11/18/2020
 
 <h2>Output:</h2>
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(13): warning C182: pointer to different objects
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?KEY_SCAN?LED
+Program Size: data=103.0 xdata=0 code=1419
+creating hex file from "led"...
+"led" - 0 Error(s), 2 Warning(s).
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(13): warning C182: pointer to different objects
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?KEY_SCAN?LED
+Program Size: data=103.0 xdata=0 code=1419
+creating hex file from "led"...
+"led" - 0 Error(s), 2 Warning(s).
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(12): warning C182: pointer to different objects
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?KEY_SCAN?LED
+Program Size: data=103.0 xdata=0 code=1419
+creating hex file from "led"...
+"led" - 0 Error(s), 2 Warning(s).
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(12): warning C182: pointer to different objects
+linking...
+Program Size: data=105.0 xdata=0 code=1430
+creating hex file from "led"...
+"led" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(3): error C202: 'key': undefined identifier
+led.c(4): error C141: syntax error near ')'
+led.c(5): error C202: 'i': undefined identifier
+led.c(6): error C202: 'i': undefined identifier
+led.c(8): error C202: 'num': undefined identifier
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(6): error C141: syntax error near ')'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(10): warning C182: pointer to different objects
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DISPLAY?LED
+Program Size: data=105.0 xdata=0 code=1430
+creating hex file from "led"...
+"led" - 0 Error(s), 2 Warning(s).
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(9): warning C182: pointer to different objects
+led.c(16): error C202: 'key': undefined identifier
+led.c(16): error C141: syntax error near '?'
+led.c(16): error C141: syntax error near ':'
+led.c(17): error C141: syntax error near ':'
+led.c(18): error C141: syntax error near '?'
+led.c(18): error C141: syntax error near '?'
+led.c(19): error C141: syntax error near '?'
+led.c(21): error C141: syntax error near '}'
+led.c(25): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(9): warning C182: pointer to different objects
+led.c(16): error C202: 'key': undefined identifier
+led.c(26): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling led.c...
+led.c(9): warning C182: pointer to different objects
+led.c(13): warning C280: 'i': unreferenced local variable
+led.c(28): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(9): warning C182: pointer to different objects
+led.c(13): warning C280: 'i': unreferenced local variable
+led.c(28): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(9): warning C182: pointer to different objects
+led.c(13): warning C280: 'i': unreferenced local variable
+led.c(30): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(9): warning C182: pointer to different objects
+led.c(13): warning C280: 'i': unreferenced local variable
+led.c(13): warning C280: 'key': unreferenced local variable
+led.c(27): error C141: syntax error near '}'
+led.c(30): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(9): warning C182: pointer to different objects
+led.c(13): warning C280: 'i': unreferenced local variable
+led.c(13): warning C280: 'key': unreferenced local variable
+led.c(30): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(9): warning C182: pointer to different objects
+led.c(20): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(9): warning C182: pointer to different objects
+led.c(19): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(9): warning C182: pointer to different objects
+led.c(18): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(6): error C141: syntax error near ')'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(4): warning C280: 'num': unreferenced local variable
+led.c(5): warning C280: 'i': unreferenced local variable
+led.c(5): warning C280: 'key': unreferenced local variable
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_NMS?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DISP?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?KEY_SCAN?LED
+Program Size: data=107.0 xdata=0 code=1363
+creating hex file from "led"...
+"led" - 0 Error(s), 6 Warning(s).
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(9): error C141: syntax error near ')'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(12): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(12): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(12): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(11): error C141: syntax error near '}'
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(13): warning C182: pointer to different objects
+linking...
+Program Size: data=105.0 xdata=0 code=1430
+creating hex file from "led"...
+"led" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(13): warning C182: pointer to different objects
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DISPLAY?LED
+Program Size: data=105.0 xdata=0 code=1431
+creating hex file from "led"...
+"led" - 0 Error(s), 2 Warning(s).
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(13): warning C182: pointer to different objects
+linking...
+Program Size: data=105.0 xdata=0 code=1433
+creating hex file from "led"...
+"led" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(8): error C202: 'i': undefined identifier
+led.c(9): error C202: 'i': undefined identifier
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(5): error C141: syntax error near 'while'
+led.c(8): error C231: 'i': redefinition
+led.c(8): error C231: 'i': redefinition
+led.c(9): error C221: non-constant case/dim expression
+led.c(9): error C231: 'num': redefinition
+Target not created
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(10): warning C182: pointer to different objects
+led.c(15): warning C280: 'i': unreferenced local variable
+linking...
+Program Size: data=107.0 xdata=0 code=1433
+creating hex file from "led"...
+"led" - 0 Error(s), 2 Warning(s).
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(9): warning C182: pointer to different objects
+led.c(14): warning C280: 'i': unreferenced local variable
+linking...
+Program Size: data=107.0 xdata=0 code=1433
+creating hex file from "led"...
+"led" - 0 Error(s), 2 Warning(s).
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(3): error C129: missing ';' before 'void'
+Target not created
+Build target 'Target 1'
+compiling led.c...
+led.c(3): error C129: missing ';' before 'void'
+Target not created
+Build target 'Target 1'
+compiling led.c...
+led.c(3): error C129: missing ';' before 'void'
+Target not created
+Build target 'Target 1'
+compiling led.c...
+led.c(8): warning C182: pointer to different objects
+led.c(13): warning C280: 'i': unreferenced local variable
+linking...
+Program Size: data=107.0 xdata=0 code=1433
+creating hex file from "led"...
+"led" - 0 Error(s), 2 Warning(s).
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(8): warning C182: pointer to different objects
+led.c(13): warning C280: 'i': unreferenced local variable
+linking...
+Program Size: data=107.0 xdata=0 code=1433
+creating hex file from "led"...
+"led" - 0 Error(s), 2 Warning(s).
+Rebuild target 'Target 1'
+compiling led.c...
+led.c(7): warning C182: pointer to different objects
+led.c(12): warning C280: 'i': unreferenced local variable
+linking...
+Program Size: data=107.0 xdata=0 code=1433
+creating hex file from "led"...
+"led" - 0 Error(s), 2 Warning(s).
