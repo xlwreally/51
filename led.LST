@@ -1,0 +1,113 @@
+C51 COMPILER V9.52.0.0   LED                                                               11/19/2020 11:22:30 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE LED
+OBJECT MODULE PLACED IN led.OBJ
+COMPILER INVOKED BY: C:\Keil51\C51\BIN\C51.EXE led.c BROWSE INCDIR(..\led) DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          #include<xlw_driver.h>
+   2          int miao=0;   
+   3          int fen=0;      
+   4          int shi=0;
+   5          int ri=19;
+   6          int yue=11;
+   7          int nian=2020;
+   8          int n=0;      //计数
+   9          int date[]={0,0,0,0,0,0,0,0,0,0,0,0,0,0}; 
+  10          int month[12]={31,28,31,30,31,30,31,31,30,31,30,31};
+  11          void time_init()               //定时器初始化函数
+  12          {
+  13   1        TMOD=0x02;                //选择方式2
+  14   1        TH0=156;                //重装初值为156
+  15   1        TL0=156;                //运行值为156
+  16   1        EA=1;                 //开总中断
+  17   1        ET0=1;                  //开定时器0中断
+  18   1        TR0=1;                  //开定时器0
+  19   1      }
+  20          
+  21          
+  22          void main(){
+  23   1      unsigned int num[]={2,0,2,0,1,1,1,8,2,2,4,2,0,0,};
+  24   1      int i;
+  25   1      time_init();
+  26   1      while(1)
+  27   1      {
+  28   2      //num[0]=key_scan();
+  29   2        for(i=13;i>=0;i--)
+  30   2        num[i]=date[13-i];
+  31   2      
+  32   2       disp(num);   
+*** WARNING C182 IN LINE 32 OF led.c: pointer to different objects
+  33   2       delay_nms(10);
+  34   2      }
+  35   1      }
+  36          
+  37          void timer() interrupt 1            //定时器0中断
+  38          {
+  39   1           n++;
+  40   1         if(n==4)                
+  41   1         {   
+  42   2           Led1=~Led1;
+  43   2           Led2=~Led2;
+  44   2             n=0;
+  45   2             miao++;
+  46   2           if(miao==60)
+  47   2           {
+  48   3               miao=0;
+  49   3               fen++;
+  50   3             if(fen==60)
+  51   3             {
+  52   4                 fen=0;
+  53   4               shi++;
+  54   4               if(shi==24)
+C51 COMPILER V9.52.0.0   LED                                                               11/19/2020 11:22:30 PAGE 2   
+
+  55   4               {
+  56   5                  shi=0;
+  57   5                  ri++;
+  58   5                  if(ri==month[yue]){
+  59   6                    ri=0;
+  60   6                    yue++;
+  61   6                  if(yue==12){
+  62   7                    yue=0;
+  63   7                    nian++;
+  64   7                  }
+  65   6                }
+  66   5               }
+  67   4             }
+  68   3           }
+  69   2           date[0]=miao%10;
+  70   2           date[1]=miao/10;
+  71   2           date[2]=fen%10;
+  72   2           date[3]=fen/10;
+  73   2           date[4]=shi%10;
+  74   2           date[5]=shi/10;
+  75   2           date[6]=ri%10;
+  76   2           date[7]=ri/10;
+  77   2           date[8]=yue%10;
+  78   2           date[9]=yue/10;
+  79   2           date[10]=nian%10;
+  80   2           date[11]=nian/10%10;
+  81   2           date[12]=nian/100%10;
+  82   2           date[13]=nian/1000%10;
+  83   2        
+  84   2         }
+  85   1         
+  86   1       
+  87   1      }   
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    796    ----
+   CONSTANT SIZE    =     44    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     66      28
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)
